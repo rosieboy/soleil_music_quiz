@@ -43,7 +43,10 @@ Netlify-projekt. Du behöver inte ändra forkens standardgren.
 ## 4. Lägg in miljövariabler i Netlify
 
 Lägg värdena i **Project configuration → Environment variables**, tillgängliga
-för både **Builds** och **Functions** i **Production**-kontexten:
+i **Production**-kontexten. På Pro kan de begränsas till **Builds** och
+**Functions**. Gratisplanen använder alla scopes; välj den lösningen först efter
+att du godkänt den bredare åtkomsten. Secrets Controller kan ställa ytterligare
+krav på scopes. Byt inte plan automatiskt:
 
 | Variabel | Värde |
 | --- | --- |
