@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  ASTRO_TELEMETRY_DISABLED = "1"
+
+# Database credentials and BETTER_AUTH_SECRET belong in Netlify's environment
+# settings, with both Builds and Functions scopes. Never put secrets here.
+# Select codex/netlify-own-quiz as the production branch in Netlify's Git settings.

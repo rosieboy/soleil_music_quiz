@@ -1,3 +1,8 @@
+# Egen Netlify-version
+
+Den här grenen är avsedd för en separat installation på Netlify.
+Se [NETLIFY.md](NETLIFY.md) för installation, egen databas och miljövariabler.
+
 # 🧞 Commands
 
 ## UI review

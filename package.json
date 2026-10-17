@@ -1,7 +1,11 @@
 {
-  "name": "",
+  "name": "fredagslaten-netlify",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "demo:seed": "node scripts/seed-ui-demo.mjs",
@@ -10,11 +14,12 @@
     "preview": "astro preview",
     "astro": "astro",
     "db:push": "drizzle-kit push --config=src/drizzle.congif.ts",
+    "db:init": "node --env-file-if-exists=.env scripts/init-database.mjs",
     "db:studio": "drizzle-kit studio --config=src/drizzle.congif.ts"
   },
   "dependencies": {
+    "@astrojs/netlify": "^6.6.5",
     "@astrojs/react": "^4.4.2",
-    "@astrojs/vercel": "^9.0.4",
     "@libsql/client": "^0.17.0",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",

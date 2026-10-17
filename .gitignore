@@ -4,6 +4,7 @@ dist/
 # generated types
 .astro/
 .vercel/
+.netlify/
 
 # dependencies
 node_modules/
@@ -17,6 +18,8 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+.env.*
+!.env.example
 
 # macOS-specific files
 .DS_Store
